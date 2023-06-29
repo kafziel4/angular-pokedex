@@ -1,0 +1,141 @@
+.pokemon-card
+    border-radius: .5rem
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.2)
+    margin: 0 .5rem 1rem
+    padding: 0 0 .25rem 0
+
+    &__image
+        background: #F2F2F2
+        border-radius: .5rem .5rem 0 0
+        margin: 0 0 .5rem
+        max-width: 300px
+        @media screen and (max-width: 600px)
+            max-width: 90vw
+
+    &__number,
+    &__name,
+    &__type,
+    &__measure
+        text-align: center
+
+    &__number,
+    &__name,
+    &__stats
+        margin: 0 .5rem .25rem
+
+    &__name,
+    &__types,
+    &__stats
+        text-transform: capitalize
+
+    &__number,
+    &__stat
+        font-size: .8rem
+
+    &__number
+        color: #919191
+
+    &__name
+        color: #313131
+        font-size: 1.5rem
+
+    &__types,
+    &__measure
+        column-count: 2
+        margin: .5rem .5rem .5rem
+
+    &__type,
+    &__bar
+        border-radius: .25rem
+
+    &__type
+        color: #FFFFFF
+        padding: .25rem 1rem
+
+        &--bug
+            background: #A8B820
+
+        &--dark
+            background: #705848
+
+        &--dragon
+            background: #7038F8
+
+        &--electric
+            background: #F8D030
+
+        &--fairy
+            background: #EE99AC
+
+        &--fighting
+            background: #C03028
+
+        &--fire
+            background: #F08030
+
+        &--flying
+            background: #A890F0
+
+        &--ghost
+            background: #705898
+
+        &--grass
+            background: #78C850
+
+        &--ground
+            background: #E0C068
+
+        &--ice
+            background: #98D8D8
+
+        &--normal
+            background: #A8A878
+
+        &--poison
+            background: #A040A0
+
+        &--psychic
+            background: #F85888
+
+        &--rock
+            background: #B8A038
+
+        &--steel
+            background: #B8B8D0
+
+        &--water
+            background: #6890F0
+
+    &__stats-table
+        width: 100%
+
+    &__stat
+        width: 30%
+
+    &__stat-name
+        float: left
+
+    &__stat-value
+        float: right
+
+    &__bar
+        height: .9rem
+        max-width: 100%
+
+        &--hp
+            background: #ff5959
+
+        &--att
+            background: #f5aC78
+
+        &--def
+            background: #fae078
+
+        &--satt
+            background: #9db7f5
+
+        &--sdef
+            background: #a7db8d
+
+        &--spd
+            background: #fa92b2

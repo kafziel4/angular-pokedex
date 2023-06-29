@@ -1,0 +1,6 @@
+<div class="pokemon-list" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="500"
+    (scrolled)="onScroll()">
+    <ng-container *ngFor="let pokemon of pokemons">
+        <app-pokemon-card *ngIf="pokemon" [pokemon]="pokemon"></app-pokemon-card>
+    </ng-container>
+</div>
